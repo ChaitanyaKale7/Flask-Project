@@ -1,9 +1,0 @@
-{% extends 'layout.html' %}
-{% block content %}
-    {% for post in dictionary %}
-        {% for k in post %}
-            <h3>{{k}} : {% print post[k] %}</h1>
-            
-        {%endfor%}
-    {% endfor %}    
-{% endblock content %}   
