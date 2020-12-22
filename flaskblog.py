@@ -6,13 +6,14 @@ posts = [
     {
         'author' : 'Chaitanya Kale',
         'title' : 'Practising Sucess',
-        'People viewed this' : '68 Million'
+        'Date Posted' : '16-12-2020'
+        
     },
 
     {
         'author' : 'Kanchan Kale',
         'title' : 'Rules for Life',
-        'People viewed this' : '88 Million'
+        'Date Posted' : '22-12-2020'
     }
 ]
 
@@ -23,7 +24,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', title='About')
+    return render_template('about.html', title='About')    
 
 if __name__ == '__main__':
     app.run(debug=True)   
